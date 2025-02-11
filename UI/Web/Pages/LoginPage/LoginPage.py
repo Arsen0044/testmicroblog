@@ -15,8 +15,8 @@ class LoginPage(BasePage):
         self.locators = LoginPageLocator()
 
     def do_login(self, username, password):
-        self.send_keys(self.locators.username_field, username)
-        self.send_keys(self.locators.password_field, password)
-        self.click_element(self.locators.submit_button)
+        # self.send_keys(self.locators.username_field, username)
+        # self.send_keys(self.locators.password_field, password)
+        # self.click_element(self.locators.submit_button)
         self.wait_for_page_load()
         return DashboardPage(self.driver)

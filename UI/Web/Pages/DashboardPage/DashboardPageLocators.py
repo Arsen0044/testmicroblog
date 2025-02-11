@@ -3,5 +3,5 @@ from selenium.webdriver.common.by import By
 
 class DashboardPageLocator:
 
-    post_input_field = (By.XPATH, '//*[@id="post"]')
-    submit_button = (By.XPATH, '//*[@id="submit"]')
+    post_input_field = (By.XPATH, '//*[@name="input_value"]')
+    submit_button = (By.XPATH, '//button[@type="submit"]')
